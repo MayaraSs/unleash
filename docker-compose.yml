@@ -1,0 +1,10 @@
+version: "3"
+services:
+  database:
+    image: postgres:10-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=unleash_user
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=unleash
